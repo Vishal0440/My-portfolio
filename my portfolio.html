@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+
+    <script src="https://kit.fontawesome.com/e4ae57ae73.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+  />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p class="logo"><span>V</span>ishal.</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,<br> I'm <span>Vishal</span><br> Frontend Developer.</h1>
+                <a href="https://github.com/Vishal0440?tab=repositories"><i class="fa-brands fa-github"></i>github.com/Vishal0440</a>
+
+            </div>
+        </div>
+    </div>
+    <!-----------About-------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">324
+                    <img src="vishal.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>To give my level best to the institution I work with. To work with the organization that provides
+                        a friendly environment with good career opportunities. My objective is to learn all the aspects
+                        of my job in the organization.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Developer</span><br><li>HTML, CSS, Bootstrap, JavaScript, React,<br> Github, and Netlify.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2022-current</span><br>Web development Learn by Udemy in six month.</li>
+                            <li><span>2020-2021</span><br>Desktop Publishing course completed in M.D institute.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022-current</span><br>Web development Learn by Udemy.</li>
+                            <li><span>2018-2021</span><br>Bsc in (physics) from Veer Kuwar Singh University from Bihar.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- --------services------ -->
+
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eius sint asperiores illum ab
+                        tempora ipsa fugiat, placeat dolor aperiam corporis labore pariatur, aliquam ratione maxime
+                        numquam, ducimus eum. Ratione!</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eius sint asperiores illum ab
+                        tempora ipsa fugiat, placeat dolor aperiam corporis labore pariatur, aliquam ratione maxime
+                        numquam, ducimus eum. Ratione!</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eius sint asperiores illum ab
+                            tempora ipsa fugiat, placeat dolor aperiam corporis labore pariatur, aliquam ratione maxime
+                            numquam, ducimus eum. Ratione!</p>
+                        <a href="#">learn more</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!--------- portfolio ---------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.png" alt="">
+                    <div class="layer">
+                        <h3>Simple Calculator</h3>
+                        <p>This app is help to Add,Subtract,Divide and Multiply Your Number.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.png" alt="">
+                    <div class="layer">
+                        <h3>Login Form</h3>
+                        <p>This is a Simple Login Page with Responsive.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.png" alt="">
+                    <div class="layer">
+                        <h3>Google Page</h3>
+                        <p>This is a simple google landing page.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <!-----------contact form----------  -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Prasadvishal70@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8128841327</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/profile.php?id=100004787861266"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/PrasadVishal7"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/prasadvishal__/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/prasad-vishal-4a95a8249/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="C.v Frontend.pdf" Download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>Copyright to Vishal.made with <i class="fa-solid fa-heart"></i> by tutorial</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
